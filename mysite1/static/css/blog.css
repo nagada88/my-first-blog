@@ -13,15 +13,9 @@ h1 a {
 
 
 .page-header {
-    /* background-image: url("../pics/header.jpg"); */
-    /* background-size:cover; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center;  */
-    /* position: relative;; */
+    background-image: ("../pics/header.jpg");
     margin-top: 0;
     padding: 20px 20px 20px 40px;
-    height: 150px;
-    width: 1200px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
