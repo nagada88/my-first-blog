@@ -3,14 +3,13 @@ body {
 }
 
 h1 a {
-  color: #FCA205;
-}
-
-h1 a {
     color: #FCA205;
-    font-family: 'Lobster';
+    font-family: 'Unica One', cursive;
 }
 
+.post_text {
+    font-family: 'Vollkorn', serif;
+}
 
 .page-header {
     /* background-image: url("../pics/header.jpg"); */
@@ -35,7 +34,7 @@ h1 a {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Unica One', cursive;
 }
 
 .date {

@@ -4,32 +4,36 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet" type="text/css"> 
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <title>Kence Határ blog</title>
     </head>
 <body>
 
 
-<div class="container-fluid">
+<div class="container-fluid" style="border: 2px solid black">
    <div class="row">
-	<img src="{% static 'pics/header.jpg' %}" class="img-responsive">
+   <div class = "col-lg-2"></div>
+    <div class = "col-md-8" style = "background:url('{% static 'pics/header.jpg' %}'); background-size:cover">
+        <h1>Kence Határ</h1>
+    </div>
+   <div class = "col-lg-2"></div> 
    </div>
 </div>
 
-
-
-    <!-- <div class="page-header"> <img class="img-responsive" src="{% static 'pics/header.jpg' %}" alt="Chania"> -->
-    <!-- <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a> -->
-        <!-- <h1><a href="/">Kence Határ - kencék határon innen és túl</a></h1> -->
-    <!-- </div> -->
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-            {% block content %}
-            {% endblock %}
-            </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="container" style="background-color:#E4B6E1">
+        <div class="col-md-12 col-lg-6" >
+        {% block content %}
+        {% endblock %}
+        </div>
+        <div class="col-lg-2" style="background-color:#FDFDFD"><h1>Ki is vagyok valójában?</h1></div>
         </div>
     </div>
+</div>
+
 </body>
 </html>
