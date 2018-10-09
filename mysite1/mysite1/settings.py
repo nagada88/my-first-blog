@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'blog',
     'tinymce',
     'django.contrib.sites',
-    'django.contrib.flatpages'
+    'django.contrib.flatpages',
+    'filebrowser',
 ]
 
 MIDDLEWARE = [
@@ -151,3 +152,8 @@ SITE_ID = 1
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+
+FILEBROWSER_DIRECTORY = ''
+DIRECTORY = ''
