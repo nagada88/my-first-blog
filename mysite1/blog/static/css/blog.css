@@ -2,11 +2,6 @@ body {
     background-color: #B2A8FF;
 }
 
-h1 a {
-    color: #FCA205;
-    font-family: 'Unica One', cursive;
-}
-
 .post_text {
     font-family: 'Vollkorn', serif;
 }
@@ -37,12 +32,9 @@ h1, h2, h3, h4 {
     font-family: 'Unica One', cursive;
 }
 
-/* p { */
-    /* font-family: 'Vollkorn', serif; */
-/* } */
 .date {
     float: right;
-    color: #828282;
+    color: white;
 }
 
 .save {
@@ -63,7 +55,13 @@ h1, h2, h3, h4 {
 .post {
     font-family: 'Vollkorn', serif;
     margin-bottom: 70px;
-    color: #E4B6E1;
+    color: white;
+}
+
+.post-detail{
+    font-family: 'Vollkorn', serif;
+    margin-bottom: 70px;
+    color: black;
 }
 
 .post h1 a, .post h1 a:visited {
@@ -73,3 +71,10 @@ h1, h2, h3, h4 {
 .comment {
     margin: 20px 0px 20px 20px;
 }
+
+.clear {
+    clear:both;
+    margin-top:-1px;
+    height:1px;
+    overflow:hidden;
+} 

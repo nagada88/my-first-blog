@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
-    'tinymce',
     'django.contrib.sites',
     'django.contrib.flatpages',
+    'blog',
+    'tinymce',
     'filebrowser',
 ]
 
