@@ -10,10 +10,12 @@
                         {{ post.published_date }}
                     </div>
                     <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                    <p>{{ post.text|safe }}</p>
+                    <p>{{ post.text|safe|truncatewords_html:40 }}</p>
                     <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
 
-                    <div style = "position:absolute; height: 50px; width: 200px; right: 30px; bottom: -18px; z-index: 1; color: black; padding: 10px 15px 10px 15px; background:url('{% static 'pics/ContinueReading.png' %}'); background-size: 100% 100%;">
+                    <div class="clear"></div>
+                    <br>
+                    <div style = "position:absolute; height: 50px; width: 200px; right: 30px; bottom: -22px; z-index: 1; color: black; padding: 10px 15px 10px 15px; background:url('{% static 'pics/ContinueReading.png' %}'); background-size: 100% 100%;">
                         <a href="{% url 'post_detail' pk=post.pk %}"><span style = "display: inline-block; vertical-align: middle; text-align:center">olvass tovább...</span></a></div>
                 </div>
          </div>
